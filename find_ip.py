@@ -5,7 +5,7 @@ port = input("please input your port for finde local ip: ")
 for i in range(256):
    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
    ip = f'127.{z}.{j}.{i}'
-   result = sock.connect_ex((ip,8090))
+   result = sock.connect_ex((ip,port))
    if i == 255:
        i = 1
        j+=1
